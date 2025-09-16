@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSR GREENS - The Essence of Life, Land and Legacy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #2E8B57;
+      --secondary: #F5F5DC;
+      --accent: #8FBC8F;
+      --dark: #2F4F4F;
+      --light: #FFFFFF;
+      --text: #333333;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Header with logo */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      color: var(--light);
+      padding: 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+
+    .logo-container {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo {
+      height: 80px;
+      width: auto;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      border: 2px solid var(--light);
+      object-fit: cover;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+      padding: 0 80px; /* Added padding to account for logo space */
+    }
+    <style>
+
+/* Header with logo - UPDATED */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  color: var(--light);
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  margin-bottom: 1rem;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 3px solid var(--light);
+  object-fit: cover;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+  padding: 0;
+}
+
+
+
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    h4 {
+      font-weight: 400;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: var(--dark);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--accent);
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      background-color: var(--light);
+      border-radius: 10px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 5px 15px var(--shadow);
+      transition: transform 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 70vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('img5.jpeg') center/cover no-repeat;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 2.5rem;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 2rem;
+      z-index: 2;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: white;
+      border: none;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary), var(--dark));
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Unified media container (images + video) */
+    .media-container {
+      width: 100%;
+      max-width: 300px;
+      margin: 1.5rem auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    .media-container img,
+    .media-container video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .media-container img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Gallery section */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 250px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Map Section */
+    .map-container {
+      width: 100%;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .map-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      margin: 1rem auto;
+      display: block;
+    }
+    
+    .location-details {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      background-color: var(--secondary);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .location-details h3 {
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+    
+    .location-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .location-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .location-feature i {
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* Testimonials */
+    .testimonials-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .testimonial {
+      background-color: var(--secondary);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    /* Contact Info */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--secondary);
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary), var(--dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .contact-details {
+      flex: 1;
+    }
+
+    .contact-details h3 {
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-details p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--dark), var(--primary));
+      color: var(--light);
+      text-align: center;
+      padding: 2.5rem 0;
+      margin-top: 3rem;
+    }
+
+    .social-icons {
+      margin: 1.5rem 0;
+    }
+
+    .social-icons a {
+      color: var(--light);
+      font-size: 1.8rem;
+      margin: 0 1rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+      transform: translateY(-5px);
+    }
+
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Center alignment for all section content */
+    section {
+      text-align: center;
+    }
+    
+    /* Left align text in specific sections for better readability */
+    #about, #services {
+      text-align: left;
+    }
+    
+    /* Center specific elements that should remain centered */
+    #about .media-container,
+    #services ul {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Improved video section alignment */
+    .video-section .media-container {
+      margin: 1.5rem auto;
+    }
+    
+    /* Better alignment for the location map image */
+    #map img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive improvements */
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .media-container {
+        max-width: 400px;
+      }
+      
+      .logo-container {
+        position: relative;
+        left: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .header-container {
+        flex-direction: column;
+      }
+      
+      .header-text {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        margin: 0 0.8rem;
+        font-size: 1rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      
+      .gallery-item {
+        height: 200px;
+      }
+      
+      .media-container {
+        max-width: 350px;
+      }
+      
+      .logo {
+        height: 70px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .gallery-item {
+        height: 250px;
+      }
+      
+      .media-container {
+        max-width: 100%;
+      }
+      
+      nav .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      nav a {
+        margin: 0.3rem 0;
+      }
+      
+      .contact-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      /* Center text on mobile for better readability */
+      #about, #services {
+        text-align: center;
+      }
+      
+      #services ul {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section {
+        padding: 1.8rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      
+      .logo {
+        height: 60px;
+      }
+      
+      .header-container {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="JSR Estate Logo" class="logo">
+      </div>
+      <div class="header-text">
+        <h1>JSR ESTATE</h1>
+        <h4>The Essence of Life, Land and Legacy</h4>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="#about"><i class="fas fa-leaf"></i> About</a>
+      <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+      <a href="#video"><i class="fas fa-video"></i> Video Tour</a>
+      <a href="#map"><i class="fas fa-map-marked-alt"></i> Location</a>
+      <a href="#services"><i class="fas fa-seedling"></i> Services</a>
+      <a href="#testimonials"><i class="fas fa-quote-left"></i> Testimonials</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Your Sanctuary Awaits</h2>
+        <p>Experience the perfect blend of rural serenity and modern convenience</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Nestled on the outskirts of South Gurgaon, JSR Green offers farmland that strikes a rare balance between rural serenity and urban access. Buyers here get expansive open plots of freehold land, ideal for weekend retreats, organic farming, or building private farmhouses.
+      </p>
+
+      <div class="media-container">
+        <img src="img5.jpeg" alt="JSR Greens farmland" />
+      </div>
+
+      <p>
+        The setting is often characterized by lush greenery, open skies, and relatively low-density surroundings, allowing for clean air, privacy, and a slower pace of life. Yet it doesn't feel completely disconnected — main roads, essential amenities, and city conveniences are typically within a manageable drive.
+      </p>
+      
+      <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Inquire Now</a>
+    </section>
+
+    <section id="gallery">
+      <h2>Image Gallery</h2>
+      <p>Explore the natural beauty and serene environment of JSR Greens through our image gallery.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img1.jpeg" alt="JSR Greens farmland" />
+        </div>
+        <div class="gallery-item">
+          <img src="img2.jpeg" alt="JSR Greens landscape" />
+        </div>
+        <div class="gallery-item">
+          <img src="img8.jpeg" alt="JSR Greens property" />
+        </div>
+        <div class="gallery-item">
+          <img src="img6.jpeg" alt="JSR Greens view" />
+        </div>
+        <div class="gallery-item">
+          <img src="img7.jpeg" alt="JSR Greens nature" />
+        </div>
+        <div class="gallery-item">
+          <img src="image 4.jpeg" alt="JSR Greens estate" />
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#contact" class="cta-button">Request More Photos</a>
+      </div>
+    </section>
+
+    <section id="video" class="video-section">
+      <h2>Video Tour</h2>
+      <p>
+        Take a virtual tour of our beautiful properties with this immersive video showcasing the serene environment and natural beauty of JSR Greens.
+      </p>
+
+      <div class="media-container">
+        <video src="vid1.mp4" controls></video>
+      </div>
+      <div class="media-container">
+        <video src="vid 2.mp4" controls></video>
+      </div>
+
+      <p style="text-align: center; font-style: italic; margin-top: 1.5rem;">
+        Experience the tranquility and natural beauty that awaits you at JSR Greens
+      </p>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#contact" class="cta-button">Schedule a Live Tour</a>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Location Map</h2>
+      <p>
+        JSR Greens is strategically located in South Gurgaon, offering the perfect balance between peaceful countryside living and urban accessibility.
+      </p>
+      <img src="loc.jpg" alt="Location map" class="map-image">
+      
+      <div class="location-details">
+        <h3>Prime Location Features</h3>
+        <div class="location-features">
+          <div class="location-feature">
+            <i class="fas fa-road"></i>
+            <span>Easy access to major highways</span>
+          </div>
+          <div class="location-feature">
+            <i class="fas fa-city"></i>
+            <span>Just 30 minutes from Gurgaon city center</span>
+          </div>
+          <div class="location-feature">
+            <i class="fas fa-tree"></i>
+            <span>Surrounded by natural greenery</span>
+          </div>
+          <div class="location-feature">
+            <i class="fas fa-store"></i>
+            <span>Essential amenities nearby</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>
+        At JSR Greens, we provide a range of services to help you make the most of your farmland investment:
+      </p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+        <li>Farmland acquisition and consultation</li>
+        <li>Organic farming setup and guidance</li>
+        <li>Farmhouse design and construction support</li>
+        <li>Land management and maintenance services</li>
+        <li>Weekend retreat planning and development</li>
+        <li>Legal documentation and title verification</li>
+        <li>Customized landscaping solutions</li>
+      </ul>
+      <p>
+        Our team of experts is dedicated to helping you create the perfect rural escape that meets your needs and exceeds your expectations.
+      </p>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#contact" class="cta-button">Discuss Your Requirements</a>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p class="testimonial-text">"Purchasing land at JSR Greens was one of the best decisions we've made. The tranquility and natural beauty are unmatched, yet we're still close enough to the city for convenience."</p>
+          <p class="testimonial-author">- Inderjeet Sharma, Delhi</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"The team at JSR Greens made the entire process seamless. Their expertise in farmland management helped us set up our organic farm without any hassles."</p>
+          <p class="testimonial-author">- Mohit, Gurgaon</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Our weekend retreat at JSR Greens has become our family's sanctuary. The kids love the open space, and we appreciate the peace and quiet away from the city bustle."</p>
+          <p class="testimonial-author">- The Jain Family</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Interested in our properties or services? Reach out to us directly using the contact information below:
+      </p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Phone Number</h3>
+            <p>+91 8860610451</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Email Address</h3>
+            <p>jsr.estate@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <p style="text-align: center; margin-top: 2rem;">
+        We're available from 9 AM to 6 PM, Monday to Saturday. Feel free to call or email us for inquiries.
+      </p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-content" id="lightboxImage" src="" alt="">
+  </div>
+
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <footer>
+    <p>Connect with us on social media:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jsr.estate?igsh=eGdtY3d3ZWZ0dmNm&utm_source=qr"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/918860610451"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 JSR Greens. All rights reserved.</p>
+    <p>The essence of Life, Land and Legacy.</p>
+  </footer>
+
+  <script>
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const mediaContainers = document.querySelectorAll('.media-container img');
+    
+    // Open lightbox when gallery images are clicked
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImage.src = item.src;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Also allow media container images to open lightbox
+    mediaContainers.forEach(item => {
+      item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImage.src = item.src;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Close lightbox
+    lightboxClose.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImage) {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+    
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+    
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Scroll animation for sections
+    const sections = document.querySelectorAll('section');
+    
+    function checkScroll() {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerBottom = window.innerHeight * 0.8;
+        
+        if (sectionTop < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    
+    // Initial check and then on scroll
+    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('load', checkScroll);
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
